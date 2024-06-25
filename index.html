@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<title>RealEstate Marketing</title>
+<link rel="stylesheet"  href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav>  
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <!-- <label class="logo"><a href="#" class="logo">HGM RealEstate</a></label> -->
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="properties.html"  id="Properties">Properties</a></li>
+        <li><a href="about.html"  id="about us">AboutUs</a></li>
+    </ul>
+</nav>
+<br><br>
+<p style="color: black; font-size: 20px;">copy our Website Link</p>
+<br>
+<input type="text" id="myInput" value="https://georgesaibour.github.io/IWB202/" readonly >
+<br>
+<section class="names" id="pot">
+    <h2 class="title">OUR NAMES</h2>
+    <div class="sa">
+        <div class="hu">
+            جورج حسام سيبور<br>
+            George Houssam Saibour<br>
+            geoge_220256
+        </div>
+
+        <div class="hu">
+            مجدولين منير الخطيب<br>
+            Majdulien Alkateeb<br>
+            Majdulien_294617
+        </div>
+
+
+        <div class="hu">
+            محمد حمزه محمد ايمن مقصوصة<br>
+          Mohamad Hamza Makksousa<br>
+            Mohamad_hamza_271756
+
+        </div>
+
+
+        <div class="hu">
+            هدى احمد الحسين<br>
+           Houda Alhusen<br>
+            Houda_163495
+
+        </div>
+
+
+        <div class="hu">
+            محمد علي اسماعيل الصوص<br>
+            Mohamad Ali Alsos<br>
+            Mohamad__ali_162048
+        </div>
+    </div>
+    <!-- <button type="button"> <a href="#up">^</a></button> -->
+</section>
+   <script>
+ function sayHello(){
+    alert("hello world");
+   }
+    document.addEventListener('DOMContentLoaded',function(){
+  const links=document.querySelectorAll('nav ul li a');
+  links.forEach(link=>{
+  link.addEventListener('click',function(){
+  links.forEach(link=>{
+  link.classList.remove('active');
+  this.classList.add('active');
+  });
+  });
+  });
+    });
+   </script>
+
+</body>
+</html>
